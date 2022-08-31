@@ -1,0 +1,143 @@
+{% extends 'bs_main.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+    <style>
+
+    </style>
+
+    <script>
+
+    function flipCard1(){
+
+            if(document.getElementById("card1").src){
+                document.getElementById("card1").src = "{% static 'mygrimoire/images/cards/lovers.svg' %}";
+            }
+    }
+
+    function flipCard2(){
+                if(document.getElementById("card2").src){
+                document.getElementById("card2").src = "{% static 'mygrimoire/images/cards/vi_of_wands.svg' %}";
+            }
+    }
+
+    function flipCard3(){
+                if(document.getElementById("card3").src){
+                document.getElementById("card3").src = "{% static 'mygrimoire/images/cards/moon.svg' %}";
+            }
+    }
+
+
+    </script>
+    <br>
+
+    <div id="main_content">
+    <div id="quote-text" class="container text-center col-8">
+
+        <p style="font-family: 'IM FELL DW Pica'; color: #F3F3CD; font-size: 22px;"><i>“Feeling stressed? Take time to breathe out and try again.”</i></p>
+    </div>
+
+        <div class="container col-lg-5 ">
+
+            <div class="d-grid col-12 pt-4 gap-3">
+                <a id="ui-bar-grn" class="btn" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/main/my-grimoire" role="button">
+                    <img src="{% static 'myGrimoire/images/my_grimoire_text_button.svg' %}" alt="logo" style="width: 180px;">
+                    <img src="{% static 'myGrimoire/images/grimoire_icon.svg' %}" alt="logo" style="width: 60px; height: 60px; margin-left: 180px;">
+                </a>
+
+
+            <div style="display: grid;overflow-x: auto;" id="ui-grn" class="text-center gap-2 pt-2"><h3 class="pt-2 gap-2" style="height: 50px;">Featured Courses</h3>
+
+                    <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto;">
+                        {% for course in courses %}
+                            {% if course.featured == 1 %}
+                                <a style="text-decoration: none;" href="/mygrimoire/courses/{{ course.id }}/start">
+                        <div class="card" style="background-color: #F3F3CD; width: 12rem; margin-bottom: 10px; border-radius: 25px">
+                            <img style="border-radius: 25px" src="{{ MEDIA_URL }}{{ course.image.url }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 style="color: #091D12; font-family: 'IM FELL DW Pica'">{{ course.title}}</h4>
+                                </div>
+                        </div>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+
+
+                    </div>
+
+                </div>
+
+
+                    {% for tarotCard in tarotCards %}
+                        {% if tarotCard.cardOfTheDay == 1 %}
+                            <a id="ui-bar-prpl-active" class="btn btn-mg" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/readings/all-tarot-cards/{{ tarotCard.id }}" role="button">
+                                Card of The Day: <i>{{ tarotCard.name }}</i></a>
+                        {% endif %}
+            {% endfor %}
+
+
+
+                <div id="ui-grn">
+                    <h3 class="pt-3 text-center" style="height: 50px;">Open the cards to draw your daily spread!</h3>
+
+                    <div class="row text-center">
+                        <div class="col">
+                    <img id="card1" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard1()" alt="logo" style="width: 100px; height: 200px; margin-left: 50px; margin-bottom: 10px">
+                        </div>
+                        <div class="col">
+                    <img id="card2" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard2()" alt="logo" style="width: 100px; height: 200px">
+                        </div>
+                        <div class="col">
+                    <img id="card3" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard3()" alt="logo" style="width: 100px; height: 200px; margin-right: 50px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <div class="container text-center pt-4">
+    <img src="{% static 'myGrimoire/images/stars_group_two.svg' %}" alt="logo" style="width: 50px; height: 50px">
+    </div>
+</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    {#    BOTTOM NAV BAR    #}
+
+
+            <div id="bottom-bar" class="text-center fixed-bottom pt-3">
+            <div class="row-cols-md-auto">
+  <div class="row text-center">
+    <div class="col">
+        <a style="text-decoration: none;" href="/mygrimoire/main"><img style="width: 30px" src="{% static 'myGrimoire/images/icons/home-fill.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Home</p></a>
+    </div>
+    <div class="col">
+      <a style="text-decoration: none;" href="/mygrimoire/courses"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/cap.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Courses</p></a>
+    </div>
+    <div class="col">
+      <a style="text-decoration: none;" href="/mygrimoire/readings"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/book.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Readings</p></a>
+    </div>
+      <div class="col">
+      <a style="text-decoration: none;" href="/mygrimoire/you"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/person-crop-circle.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">You</p></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    {#    END BOTTOM NAV BAR    #}
+
+
+{% endblock %}

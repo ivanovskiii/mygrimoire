@@ -1,0 +1,57 @@
+{% extends 'bs.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+        <style> body {background-color: #F3F3CD}
+
+        #ui-bar-prpl-active{
+        border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        font-size: 15pt;
+        --bs-btn-color: #816E94;
+  --bs-btn-border-color: #816E94;
+  --bs-btn-hover-color: #F3F3CD;
+  --bs-btn-hover-bg: #5F4776;
+  --bs-btn-hover-border-color: #5F4776;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #F3F3CD;
+  --bs-btn-active-bg: #5F4776;
+  --bs-btn-active-border-color: #5F4776;
+  --bs-btn-active-shadow: #5F4776;
+  --bs-btn-disabled-color: #5F4776;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #5F4776;
+  --bs-gradient: none;
+  --bs-btn-color: #5F4776;
+    }
+
+        </style>
+
+
+
+<div id="main_content">
+<div class="container text-center pt-3">
+    <img src="{% static 'myGrimoire/images/logo.svg' %}" alt="logo">
+</div>
+
+<div class="container py-3 col-10 col-lg-5">
+	<form method="POST">
+        <div class="form-group d-grid col-12 mx-auto pt-2 align-content-center">
+            <hr>
+		{% csrf_token %}
+            {{ register_form|crispy }}
+        </div>
+<div class="d-grid gap-2 col-12 pt-2 align-content-center">
+<button id="ui-bar-prpl" class="btn btn-mg" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; " role="button">Sign Up</button>
+	</form>
+    <a id="ui-bar-prpl-active" class="btn btn-outline-mg" href="/mygrimoire/home" role="button" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; " role="button">Back</a>
+</div>
+</div>
+
+{% endblock %}

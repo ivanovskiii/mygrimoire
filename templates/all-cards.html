@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myGrimoire</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myGrimoire/css/bootstrap.css' %}" >
+    <script src="{% static 'myGrimoire/js/bootstrap.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'myGrimoire/master_transition.css' %}" >
+
+</head>
+<body>
+
+
+<style>
+        body {background-color: #0D2B1B}
+        #top-bar{
+                height: 85px;
+                backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-blend-mode: hard-light;
+                top: -10px;
+                        background-color: #0D2B1B99;
+
+        }
+        #bottom-bar{
+                background: #091D1299;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        #quote-text{
+            font-family: IM FELL DW PICA ITALIC;
+        }
+
+    h3{
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+    }
+
+    #ui-bar-prpl{
+        border-radius: 50px;
+        pointer-events: none;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-bar-prpl-active{
+        border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-grn{
+            background-color: #091D12;
+            border-radius: 40px;
+            width: available;
+        }
+
+    #ui-darker-prpl{
+            background-color: #594D66;
+            border-radius: 30px;
+            width: available;
+        --bs-btn-hover-bg: #3B3243;
+        --bs-btn-hover-color: 3#3B3243;
+
+        }
+
+    #ui-darkest-prpl{
+            background-color: #3B3243;
+            border-radius: 30px;
+            width: available;
+
+        }
+
+
+    #ui-bar-grn{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-bar-grn-disabled{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+        pointer-events: none;
+    }
+
+    </style>
+
+    {#    TOP NAV BAR    #}
+
+        <div id="top-bar" class="container navbar fixed-top position-sticky pt-4" style="display: flex; flex-flow: row;">
+            <a href="/mygrimoire/readings">
+            <div class="container justify-content-center" style="flex: 1">
+                <img style="width: 25px;padding-left: 10px" src="{% static 'myGrimoire/images/icons/chevron-backward.svg' %}" alt="logo">
+                </div>
+            </a>
+            <div class="container-fluid justify-content-center" style="flex: 12">
+                <img style="padding-right: 50px" src="{% static 'myGrimoire/images/logo_light.svg' %}" alt="logo">
+            </div>
+        </div>
+
+{#    END TOP NAV BAR    #}
+
+
+<div class="container pb-2 col-md-5">
+    <div id="main_content">
+<div class="d-grid col-12 pt-4 text-center pb-2">
+<div id="ui-bar-prpl" class="btn btn-mg pt-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-padding-x: .10rem;" disabled>
+
+    <div class="container text-center col-11 align-middle">
+    <div class="row gap-1 pb-1 align-middle">
+    <div style="height: 52px" id="ui-darkest-prpl" class="col align-middle pt-3"><a><p style="font-size: 18px">All</p></a></div>
+    <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 12px" src="{% static 'myGrimoire/images/icons/major_arcana_icon.svg' %}" alt="logo"></a></div>
+        <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 19px" src="{% static 'myGrimoire/images/icons/pentacles_icon.svg' %}" alt="logo"></a></div>
+        <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 12px" src="{% static 'myGrimoire/images/icons/wands_icon.svg' %}" alt="logo"></a></div>
+        <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 12px" src="{% static 'myGrimoire/images/icons/swords_icon.svg' %}" alt="logo"></a></div>
+        <div style="height: 52px"  id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 12px" src="{% static 'myGrimoire/images/icons/cups_icon.svg' %}" alt="logo"></a></div>
+</div>
+</div>
+</div>
+</div>
+
+    <div class="container d-grid pt-4 pb-4" id="ui-grn">
+            <div style="" class="container text-start">
+  <div class="row-3">
+    <div class="col-12">
+        {% for tarotCard in tarotCards %}
+                        <a style="text-decoration: none;" href="/mygrimoire/readings/all-tarot-cards/{{ tarotCard.id }}">
+                        <img style="margin-bottom: 10px; margin-right: 10px; border-radius: 15px; width:115px; height:210px" src="{{ MEDIA_URL }}{{ tarotCard.image.url }}" alt="...">
+                        </a>
+                    {% endfor %}</div>
+  </div>
+</div>
+        </div>
+
+
+    </div>
+    <div class="container text-center pt-4">
+    <img src="{% static 'myGrimoire/images/stars_group_two.svg' %}" alt="logo" style="width: 50px; height: 50px">
+    </div>
+</div>
+ </div>
+<br><br><br><br>
+
+{#    BOTTOM NAV BAR    #}
+
+
+            <div id="bottom-bar" class="text-center fixed-bottom pt-3">
+            <div class="row-cols-md-auto">
+  <div class="row text-center">
+    <div class="col">
+        <a style="text-decoration: none;" href="/mygrimoire/main"><img style="width: 30px" src="{% static 'myGrimoire/images/icons/home.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Home</p></a>
+    </div>
+    <div class="col">
+        <a style="text-decoration: none;" href="/mygrimoire/courses"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/cap.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Courses</p></a>
+    </div>
+    <div class="col">
+        <a style="text-decoration: none;" href="/mygrimoire/readings"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/book-fill.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Readings</p></a>
+    </div>
+      <div class="col">
+      <a style="text-decoration: none;" href="/mygrimoire/you"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/person-crop-circle.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">You</p></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    {#    END BOTTOM NAV BAR    #}
+
+</body>
+</html>

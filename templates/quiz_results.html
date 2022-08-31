@@ -1,0 +1,156 @@
+{% extends 'bs_main.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+        body {background-color: #0D2B1B}
+        input{
+            font-family: "IM FELL DW Pica";
+            color: #F3F3CD;
+        }
+        p{
+            color: #F3F3CD;
+            font-family: "IM FELL DW Pica";
+        }
+        #top-bar{
+                height: 85px;
+                backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-blend-mode: hard-light;
+                top: -10px;
+                        background-color: #0D2B1B99;
+
+        }
+        #bottom-bar{
+                background: #091D1299;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        #quote-text{
+            font-family: IM FELL DW PICA ITALIC;
+        }
+
+    h3{
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+    }
+
+    #ui-bar-prpl{
+        border-radius: 50px;
+        pointer-events: none;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+
+
+    }
+
+
+    #ui-bar-prpl-active{
+        border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+        --bs-btn-color: #816E94;
+  --bs-btn-border-color: #816E94;
+  --bs-btn-hover-color: #F3F3CD;
+  --bs-btn-hover-bg: #5F4776;
+  --bs-btn-hover-border-color: #5F4776;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #F3F3CD;
+  --bs-btn-active-bg: #5F4776;
+  --bs-btn-active-border-color: #5F4776;
+  --bs-btn-active-shadow: #5F4776;
+  --bs-btn-disabled-color: #5F4776;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #5F4776;
+  --bs-gradient: none;
+  --bs-btn-color: #5F4776;
+    }
+
+    #ui-grn{
+            background-color: #091D12;
+            border-radius: 40px;
+            width: available;
+        }
+
+
+    #ui-bar-grn{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-bar-grn-disabled{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+        pointer-events: none;
+    }
+
+    </style>
+
+<div class="container pb-2 col-lg-5">
+    <div id="main_content">
+<div class="d-grid col-12 pt-4 text-center pb-3">
+<div id="ui-bar-prpl" class="btn btn-mg pt-2" style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .10rem;" disabled>
+    <h3><img src="{% static 'myGrimoire/images/star_filled.svg' %}"><i> {{ onecourse.title }}:  Quiz</i></h3>
+</div>
+</div>
+
+    <div class="container pt-2 pb-3 text-center" id="ui-grn">
+        <h3>Your Result: 3/4</h3>
+        <p>Congrats! Now you're one step closer to becoming a full Witch!</p>
+    </div>
+
+        <div class="container text-center pt-4 pb-4">
+        <img src="{% static 'myGrimoire/images/cards_light_grn_fill.svg' %}">
+            </div>
+
+<div class="d-grid gap-3 mx-auto pt-2 align-content-center">
+    <a href="/mygrimoire/main/my-grimoire" id="ui-bar-prpl-active" class="btn btn-mg col-12" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" role="button">Download Certificate</a>
+    <a href="/mygrimoire/courses" id="ui-bar-prpl-active" class="btn col-12" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" role="button">Back to Courses</a>
+</div>
+        <div class="container text-center pt-2">
+    <img src="{% static 'myGrimoire/images/stars_group_two.svg' %}" alt="logo" style="width: 50px; height: 50px">
+    </div>
+</div>
+ </div>
+<br>
+
+
+{% endblock %}

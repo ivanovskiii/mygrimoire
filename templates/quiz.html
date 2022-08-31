@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myGrimoire</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myGrimoire/css/bootstrap.css' %}" >
+    <script src="{% static 'myGrimoire/js/bootstrap.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'myGrimoire/master_transition.css' %}" >
+
+</head>
+<body>
+
+
+<style>
+        body {background-color: #0D2B1B}
+        input{
+            font-family: "IM FELL DW Pica";
+            color: #F3F3CD;
+        }
+        p{
+            color: #F3F3CD;
+            font-family: "IM FELL DW Pica";
+        }
+        #top-bar{
+                height: 85px;
+                backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-blend-mode: hard-light;
+                top: -10px;
+                        background-color: #0D2B1B99;
+
+        }
+        #bottom-bar{
+                background: #091D1299;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        #quote-text{
+            font-family: IM FELL DW PICA ITALIC;
+        }
+
+    h3{
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+    }
+
+    #ui-bar-prpl{
+        border-radius: 50px;
+        pointer-events: none;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-bar-prpl-active{
+        border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-grn{
+            background-color: #091D12;
+            border-radius: 40px;
+            width: available;
+        }
+
+
+    #ui-bar-grn{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+    }
+
+    #ui-bar-grn-disabled{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #091D12;
+  --bs-btn-border-color: #091D12;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #04140B;
+  --bs-btn-hover-border-color: #04140B;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #091D12;
+  --bs-btn-active-border-color: #091D12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #091D12;
+  --bs-btn-disabled-border-color: #091D12;
+                border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        color: #F3F3CD;
+        font-size: 15pt;
+        pointer-events: none;
+    }
+
+    </style>
+
+    {#    TOP NAV BAR    #}
+
+        <div id="top-bar" class="container navbar fixed-top position-sticky" style="display: flex; flex-flow: row;">
+            <a href="/mygrimoire/courses/{{ onecourse.id }}">
+            <div class="container justify-content-center" style="flex: 1">
+                <img style="width: 25px;padding-left: 10px" src="{% static 'myGrimoire/images/icons/chevron-backward.svg' %}" alt="logo">
+                </div>
+            </a>
+            <div class="container-fluid justify-content-center" style="flex: 12">
+                <img style="padding-right: 50px" src="{% static 'myGrimoire/images/logo_light.svg' %}" alt="logo">
+            </div>
+        </div>
+
+{#    END TOP NAV BAR    #}
+
+
+<div class="container pb-3 col-lg-5">
+    <div id="main_content">
+<div class="d-grid col-12 pt-4 text-center pb-3">
+<div id="ui-bar-prpl" class="btn btn-mg pt-2" style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .10rem;" disabled>
+    <h3><img src="{% static 'myGrimoire/images/star_filled.svg' %}"><i> {{ onecourse.title }}:  Quiz</i></h3>
+</div>
+</div>
+
+        <div class="d-grid gap-3 mx-auto">
+    <div class="container pt-2 pb-3 text-center" id="ui-grn">
+        <h3>Question 1: </h3>
+        <p>This is a question you need to answer in order to get your certificate!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><input type="radio" name="a1"><p>Answer 1</p></div>
+                    <div class="col"><input type="radio" name="a2"><p>Answer 2</p></div>
+                    <div class="w-100"></div>
+                    <div class="col"><input type="radio" name="a3"><p>Answer 3</p></div>
+                    <div class="col"><input type="radio" name="a4"><p>Answer 4</p></div>
+    </div>
+            </div>
+    </div>
+
+        <div class="container pt-2 pb-3 text-center" id="ui-grn">
+        <h3>Question 2: </h3>
+        <p>This is a question you need to answer in order to get your certificate!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><input type="radio" name="a2.1"><p>Answer 1</p></div>
+                    <div class="col"><input type="radio" name="a2.2"><p>Answer 2</p></div>
+                    <div class="w-100"></div>
+                    <div class="col"><input type="radio" name="a2.3"><p>Answer 3</p></div>
+                    <div class="col"><input type="radio" name="a2.4"><p>Answer 4</p></div>
+    </div>
+            </div>
+    </div>
+
+        <div class="container pt-2 pb-3 text-center" id="ui-grn">
+        <h3>Question 3: </h3>
+        <p>This is a question you need to answer in order to get your certificate!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><input type="radio" name="a3.1"><p>Answer 1</p></div>
+                    <div class="col"><input type="radio" name="a3.2"><p>Answer 2</p></div>
+                    <div class="w-100"></div>
+                    <div class="col"><input type="radio" name="a3.3"><p>Answer 3</p></div>
+                    <div class="col"><input type="radio" name="a3.4"><p>Answer 4</p></div>
+    </div>
+            </div>
+    </div>
+
+        <div class="container pt-2 pb-3 text-center" id="ui-grn">
+        <h3>Question 4: </h3>
+        <p>This is a question you need to answer in order to get your certificate!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><input type="radio" name="a4.1"><p>Answer 1</p></div>
+                    <div class="col"><input type="radio" name="a4.2"><p>Answer 2</p></div>
+                    <div class="w-100"></div>
+                    <div class="col"><input type="radio" name="a4.3"><p>Answer 3</p></div>
+                    <div class="col"><input type="radio" name="a4.4"><p>Answer 4</p></div>
+    </div>
+            </div>
+    </div>
+</div>
+
+<div class="pt-3">
+    <a href="/mygrimoire/courses/{{ onecourse.id }}/quiz/results" id="ui-bar-prpl-active" class="btn btn-mg col-12" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" role="button">Submit Answers</a>
+</div>
+</div>
+ </div>
+<div class="container text-center pt-4">
+    <img src="{% static 'myGrimoire/images/stars_group_two.svg' %}" alt="logo" style="width: 50px; height: 50px">
+    </div>
+<br>
+
+
+</body>
+</html>

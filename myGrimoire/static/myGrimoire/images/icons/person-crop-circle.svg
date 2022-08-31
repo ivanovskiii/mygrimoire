@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Apple Native CoreSVG 175.5-->
+
+<svg
+   version="1.1"
+   width="78.85746"
+   height="78.808594"
+   id="svg124"
+   sodipodi:docname="person-crop-circle.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs128" />
+  <sodipodi:namedview
+     id="namedview126"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.25570649"
+     inkscape:cx="111.45591"
+     inkscape:cy="310.90334"
+     inkscape:window-width="1440"
+     inkscape:window-height="789"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Symbols" />
+  <!--glyph: "uni10026D.medium", point size: 100.0, font version: "18.0d10e1", template writer version: "90"-->
+  <style
+     id="style2">.monochrome-0 {fill:#000000}
+
+.SFSymbolsPreview000000 {fill:#000000;opacity:1.0}
+</style>
+  <g
+     id="Symbols"
+     style="fill:#f3f3cd;fill-opacity:1"
+     transform="translate(-1410.4159,-621.3418)">
+    <g
+       id="Regular-S"
+       transform="translate(1403.58,696)"
+       style="fill:#f3f3cd;fill-opacity:1">
+      <path
+         class="monochrome-0 SFSymbolsPreview000000"
+         d="m 46.2402,4.15039 c 21.5332,0 39.4532,-17.87109 39.4532,-39.40429 0,-21.5332 -17.9688,-39.4043 -39.502,-39.4043 -21.4844,0 -39.35546,17.8711 -39.35546,39.4043 0,21.5332 17.91996,39.40429 39.40426,39.40429 z m 0,-7.42187 c -17.7246,0 -31.8847,-14.20902 -31.8847,-31.98242 0,-17.7734 14.1113,-31.9824 31.8359,-31.9824 17.7734,0 32.0313,14.209 32.0313,31.9824 0,17.7734 -14.209,31.98242 -31.9825,31.98242 z m 26.3184,-6.5918 -0.1465,-0.48832 c -1.7578,-5.7129 -11.9629,-11.7675 -26.1719,-11.7675 -14.209,0 -24.3652,6.0546 -26.123,11.7675 l -0.1465,0.48832 c 6.9824,6.78711 19.3848,10.64453 26.2695,10.64453 6.9336,0 19.336,-3.85742 26.3184,-10.64453 z M 46.2402,-28.5645 c 7.3731,0.0977 13.1836,-6.2011 13.1836,-14.4531 0,-7.7636 -5.8105,-14.1601 -13.1836,-14.1601 -7.3242,0 -13.1836,6.3965 -13.1347,14.1601 0.0488,8.252 5.7617,14.3555 13.1347,14.4531 z"
+         id="path117"
+         style="fill:#f3f3cd;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

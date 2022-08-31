@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Apple Native CoreSVG 175.5-->
+
+<svg
+   version="1.1"
+   width="78.85746"
+   height="78.808594"
+   id="svg130"
+   sodipodi:docname="person-crop-circle-fill.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs134">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1867"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1863">
+      <path
+         class="monochrome-1 multicolor-1:white hierarchical-1:primary SFSymbolsPreviewFFFFFF"
+         d="m 46.2402,-2.44141 c -8.3496,0 -17.1386,-3.36914 -23.0957,-9.61909 4.1016,-6.3965 12.8418,-10.0586 23.0957,-10.0586 10.1075,0 18.9453,3.6132 23.0957,10.0586 -5.957,6.24995 -14.7461,9.61909 -23.0957,9.61909 z m 0,-26.12309 c -7.373,-0.0976 -13.1836,-6.2011 -13.1836,-14.4531 -0.049,-7.7636 5.8106,-14.1601 13.1836,-14.1601 7.3731,0 13.1836,6.3965 13.1836,14.1601 0,8.252 -5.8105,14.5508 -13.1836,14.4531 z"
+         id="path1865"
+         style="display:none;-sfsymbols-clear-behind:true" />
+      <path
+         id="lpe_path-effect1867"
+         style="-sfsymbols-clear-behind:true"
+         class="powerclip"
+         d="M 1.83594,-79.6582 H 90.6934 V 9.15039 H 1.83594 Z M 46.2402,-2.44141 c 8.3496,0 17.1387,-3.36914 23.0957,-9.61909 -4.1504,-6.4454 -12.9882,-10.0586 -23.0957,-10.0586 -10.2539,0 -18.9941,3.6621 -23.0957,10.0586 5.9571,6.24995 14.7461,9.61909 23.0957,9.61909 z m 0,-26.12309 c 7.3731,0.0977 13.1836,-6.2011 13.1836,-14.4531 0,-7.7636 -5.8105,-14.1601 -13.1836,-14.1601 -7.373,0 -13.2326,6.3965 -13.1836,14.1601 0,8.252 5.8106,14.3555 13.1836,14.4531 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview132"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.68975475"
+     inkscape:cx="-292.13282"
+     inkscape:cy="100.76045"
+     inkscape:window-width="1440"
+     inkscape:window-height="789"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Regular-S" />
+  <!--glyph: "uni10026E.medium", point size: 100.0, font version: "18.0d10e1", template writer version: "90"-->
+  <style
+     id="style2">.monochrome-0 {fill:#000000}
+.monochrome-1 {fill:#FFFFFF;opacity:0.0;-sfsymbols-clear-behind:true}
+
+.multicolor-0:tintColor {fill:#007AFF}
+.multicolor-1:white {fill:#FFFFFF}
+
+.hierarchical-0:tertiary {fill:#8E8E8E}
+.hierarchical-1:primary {fill:#212121}
+
+.SFSymbolsPreview007AFF {fill:#007AFF;opacity:1.0}
+.SFSymbolsPreviewFFFFFF {fill:#FFFFFF;opacity:1.0}
+</style>
+  <g
+     id="Symbols"
+     transform="translate(-1361.5922,-637.28425)">
+    <g
+       id="Regular-S"
+       transform="translate(1324.532,731.20624)">
+      <path
+         class="monochrome-0 multicolor-0:tintColor hierarchical-0:tertiary SFSymbolsPreview007AFF"
+         d="m 46.2402,4.15039 c 21.5332,0 39.4532,-17.87109 39.4532,-39.40429 0,-21.5332 -17.9688,-39.4043 -39.502,-39.4043 -21.4844,0 -39.35546,17.8711 -39.35546,39.4043 0,21.5332 17.91996,39.40429 39.40426,39.40429 z"
+         id="path119"
+         style="fill:#f3f3cd;fill-opacity:1"
+         clip-path="url(#clipPath1863)"
+         inkscape:path-effect="#path-effect1867"
+         inkscape:original-d="m 46.2402,4.15039 c 21.5332,0 39.4532,-17.87109 39.4532,-39.40429 0,-21.5332 -17.9688,-39.4043 -39.502,-39.4043 -21.4844,0 -39.35546,17.8711 -39.35546,39.4043 0,21.5332 17.91996,39.40429 39.40426,39.40429 z"
+         transform="translate(30.224227,-19.263793)" />
+    </g>
+  </g>
+</svg>

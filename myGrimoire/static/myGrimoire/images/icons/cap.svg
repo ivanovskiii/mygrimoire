@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Apple Native CoreSVG 175.5-->
+
+<svg
+   version="1.1"
+   width="104.58938"
+   height="95.558487"
+   id="svg124"
+   sodipodi:docname="cap.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs128" />
+  <sodipodi:namedview
+     id="namedview126"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.18429996"
+     inkscape:cx="-588.71419"
+     inkscape:cy="119.37062"
+     inkscape:window-width="1440"
+     inkscape:window-height="788"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g359" />
+  <!--glyph: "uni100AD3.medium", point size: 100.0, font version: "18.0d10e1", template writer version: "90"-->
+  <style
+     id="style2">.monochrome-0 {fill:#000000}
+
+.SFSymbolsPreview000000 {fill:#000000;opacity:1.0}
+</style>
+  <g
+     id="g359"
+     transform="translate(-502.26597,-730.88406)">
+    <g
+       id="Symbols">
+      <g
+         id="Regular-S"
+         transform="translate(416.53723,1802.8912)"
+         style="fill:#f3f3cd;fill-opacity:1">
+        <path
+           class="monochrome-0 SFSymbolsPreview000000"
+           d="m 138.02362,-1020.101 c 3.3692,0.049 6.6895,-0.8789 10.7911,-2.7344 l 37.4514,-17.0898 c 2.734,-1.2207 4.052,-3.6621 4.052,-6.1035 0,-2.4415 -1.318,-4.9317 -4.052,-6.1524 l -37.4514,-17.0898 c -4.1016,-1.8555 -7.4219,-2.7832 -10.7911,-2.7344 -3.3203,-0.049 -6.6894,0.8789 -10.791,2.7344 l -37.451098,17.0898 c -2.7344,1.2207 -4.05278,3.7109 -4.05278,6.1524 0,2.4414 1.31838,4.8828 4.05278,6.1035 l 37.451098,17.0898 c 4.1016,1.8555 7.4707,2.7832 10.791,2.7344 z m 0,-6.9336 c -2.4902,0 -4.9316,-0.6348 -8.1543,-2.1484 l -34.570298,-15.6739 c -0.6347,-0.2929 -0.9277,-0.6836 -0.9277,-1.1718 0,-0.5372 0.293,-0.9278 0.9277,-1.2208 l 34.570298,-15.6738 c 3.2227,-1.4648 5.6641,-2.1484 8.1543,-2.1484 2.4903,0 4.9317,0.6836 8.1543,2.1484 l 34.5702,15.6738 c 0.635,0.293 0.977,0.6836 0.977,1.2208 0,0.4882 -0.342,0.8789 -0.977,1.1718 l -34.5702,15.6739 c -3.2226,1.5136 -5.664,2.1484 -8.1543,2.1484 z m -37.8417,9.7656 c 0,12.4512 15.0878,21.97271 37.8417,21.97271 22.8028,0 37.8418,-9.52151 37.8418,-21.97271 v -20.4101 h -7.0312 v 20.4101 c 0,8.4961 -12.2559,15.3809 -30.8106,15.3809 -18.5546,0 -30.8105,-6.8848 -30.8105,-15.3809 v -20.4101 h -7.0312 z m 6.5917,25.48834 v 10.0586 c 0,3.1738 2.0997,5.2734 5.2735,5.2734 h 1.0742 c 3.1738,0 5.2734,-2.0996 5.2734,-5.2734 v -10.0586 c 0,-3.17383 -2.0996,-5.27344 -5.2734,-5.27344 h -1.0742 c -3.1738,0 -5.2735,2.09961 -5.2735,5.27344 z m 3.0274,-1.22071 h 5.6152 v -38.23243 l -5.6152,-2.7344 z m 5.6152,-38.23243 22.1192,-12.0606 -2.3926,-4.4433 -25.3418,13.5254 z m 22.8028,-10.3028 c 4.0527,0 8.3007,-1.8554 8.3007,-4.4921 0,-2.6368 -4.248,-4.4434 -8.3007,-4.4434 -4.0528,0 -8.3497,1.8066 -8.3497,4.4434 0,2.6367 4.2969,4.4921 8.3497,4.4921 z"
+           id="path117"
+           style="fill:#f3f3cd;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

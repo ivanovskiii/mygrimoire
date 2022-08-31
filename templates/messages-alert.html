@@ -1,0 +1,11 @@
+{% load static %}
+{% for message in messages %}
+<div class="container-fluid p-0">
+  <div style="border-radius: 30px; font-family: 'IM FELL DW Pica'" class="alert {{ message.tags }} alert-dismissible fade show" role="alert" >
+    <img src="{% static 'myGrimoire/images/stars_group_two_filled.svg' %}" alt="logo" style="width: 30px; height: 30px"> {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+{#      <span aria-hidden="True">&times;</span>#}
+    </button>
+  </div>
+</div>
+{% endfor %}

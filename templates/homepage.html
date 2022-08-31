@@ -1,0 +1,90 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Homepage</title>#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
+{##}
+{#    {% load static %}#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'myGrimoire/css/bootstrap.css' %}" >#}
+{#    <script src="{% static 'myGrimoire/js/bootstrap.js' %}"></script>#}
+{##}
+{#</head>#}
+{#<style>#}
+{#    body {background-color: #F3F3CD}#}
+{#</style>#}
+{#<body>#}
+
+{% extends 'bs.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+    <style> body {background-color: #F3F3CD}
+
+    #ui-bar-prpl-active{
+        border-radius: 50px;
+        font-family: "IM FELL DW Pica";
+        font-size: 15pt;
+        --bs-btn-color: #816E94;
+  --bs-btn-border-color: #816E94;
+  --bs-btn-hover-color: #F3F3CD;
+  --bs-btn-hover-bg: #5F4776;
+  --bs-btn-hover-border-color: #5F4776;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #F3F3CD;
+  --bs-btn-active-bg: #5F4776;
+  --bs-btn-active-border-color: #5F4776;
+  --bs-btn-active-shadow: #5F4776;
+  --bs-btn-disabled-color: #5F4776;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #5F4776;
+  --bs-gradient: none;
+  --bs-btn-color: #5F4776;
+    }
+
+    </style>
+
+    <div id="main_content">
+
+    <div class="container pt-4"></div>
+<div class="container text-center">
+    <div class="d-grid gap-5">
+    <div class="row text-center">
+        <div class="col-13 pt-4">
+
+<img src="{% static 'myGrimoire/images/stars_group_three.svg' %}" alt="stars group three">
+        </div>
+        <div class="col-13 pt-4">
+<img src="{% static 'myGrimoire/images/logo.svg' %}" alt="logo">
+        </div>
+        <div class="col-13 pt-4">
+<img src="{% static 'myGrimoire/images/cards.svg' %}" alt="cards">
+        </div>
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="container-fluid col-lg-5">
+<div class="d-grid gap-2 mx-auto pt-5 align-content-center">
+            <div class="text-center pb-1">
+<h3 style="font-family: 'IM FELL DW Pica'">Welcome, fellow Witch...</h3>
+        </div>
+
+    <div class="d-grid gap-2 col-12 pt-2 align-content-center">
+<a id="ui-bar-prpl" class="btn btn-mg" href="/mygrimoire/register" style="font-family: 'IM FELL DW Pica';--bs-btn-padding-y: .90rem; --bs-btn-padding-x: 0.10rem; " role="button">Sign Up</a>
+<a id ="ui-bar-prpl-active"class="btn btn-outline-mg" href="/mygrimoire/login" role="button" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; " role="button">Login</a>
+</div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
+
+{#</body>#}
+{#</html>#}
