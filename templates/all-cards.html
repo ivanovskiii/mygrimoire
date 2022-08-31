@@ -139,13 +139,13 @@
 {#    END TOP NAV BAR    #}
 
 
-<div class="container pb-2 col-md-5">
+<div class="container pb-2 col-lg-5">
     <div id="main_content">
 <div class="d-grid col-12 pt-4 text-center pb-2">
 <div id="ui-bar-prpl" class="btn btn-mg pt-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-padding-x: .10rem;" disabled>
 
     <div class="container text-center col-11 align-middle">
-    <div class="row gap-1 pb-1 align-middle">
+    <div class="row gap-1 pb-1 text-center">
     <div style="height: 52px" id="ui-darkest-prpl" class="col align-middle pt-3"><a><p style="font-size: 18px">All</p></a></div>
     <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 12px" src="{% static 'myGrimoire/images/icons/major_arcana_icon.svg' %}" alt="logo"></a></div>
         <div style="height: 52px" id="ui-darker-prpl" class="col align-middle pt-2"><a><img style="width: 19px" src="{% static 'myGrimoire/images/icons/pentacles_icon.svg' %}" alt="logo"></a></div>
@@ -157,13 +157,13 @@
 </div>
 </div>
 
-    <div class="container d-grid pt-4 pb-4" id="ui-grn">
-            <div style="" class="container text-start">
+    <div class="container text-center d-grid pt-4 pb-4" id="ui-grn">
+            <div class="container">
   <div class="row-3">
-    <div class="col-12">
+    <div class="col">
         {% for tarotCard in tarotCards %}
                         <a style="text-decoration: none;" href="/mygrimoire/readings/all-tarot-cards/{{ tarotCard.id }}">
-                        <img style="margin-bottom: 10px; margin-right: 10px; border-radius: 15px; width:115px; height:210px" src="{{ MEDIA_URL }}{{ tarotCard.image.url }}" alt="...">
+                        <img style="margin-bottom: 10px; border-radius: 15px; width:80px; height:150px" src="{{ MEDIA_URL }}{{ tarotCard.image.url }}" alt="...">
                         </a>
                     {% endfor %}</div>
   </div>

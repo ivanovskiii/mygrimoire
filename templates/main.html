@@ -36,23 +36,23 @@
     <br>
 
     <div id="main_content">
-    <div id="quote-text" class="container text-center">
+    <div id="quote-text" class="container col-8 text-center">
 
         <p style="font-family: 'IM FELL DW Pica'; color: #F3F3CD; font-size: 22px;"><i>“Feeling stressed? Take time to breathe out and try again.”</i></p>
     </div>
 
-        <div class="container col-lg-5 ">
+        <div class="container col-lg-5">
 
-            <div class="d-grid col-12 pt-4 gap-3">
+            <div class="d-grid pt-4 gap-3">
                 <a id="ui-bar-grn" class="btn" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/main/my-grimoire" role="button">
                     <img src="{% static 'myGrimoire/images/my_grimoire_text_button.svg' %}" alt="logo" style="width: 180px;">
-                    <img src="{% static 'myGrimoire/images/grimoire_icon.svg' %}" alt="logo" style="width: 60px; height: 60px; margin-left: 180px;">
+                    <img src="{% static 'myGrimoire/images/grimoire_icon.svg' %}" alt="logo" style="width: 60px; height: 60px;">
                 </a>
 
 
             <div style="display: grid;overflow-x: auto;" id="ui-grn" class="text-center gap-2 pt-2"><h3 class="pt-2 gap-2" style="height: 50px;">Featured Courses</h3>
 
-                    <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto;">
+                    <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: 60%; overflow-x: auto;">
                         {% for course in courses %}
                             {% if course.featured == 1 %}
                                 <a style="text-decoration: none;" href="/mygrimoire/courses/{{ course.id }}/start">
@@ -81,18 +81,18 @@
 
 
 
-                <div id="ui-grn">
+                <div class="container" id="ui-grn">
                     <h3 class="pt-3 text-center" style="height: 50px;">Open the cards to draw your daily spread!</h3>
 
                     <div class="row text-center">
                         <div class="col">
-                    <img id="card1" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard1()" alt="logo" style="width: 100px; height: 200px; margin-left: 50px; margin-bottom: 10px">
+                    <img id="card1" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard1()" alt="logo" style="width: 80px; height: 180px; margin-bottom: 10px">
                         </div>
                         <div class="col">
-                    <img id="card2" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard2()" alt="logo" style="width: 100px; height: 200px">
+                    <img id="card2" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard2()" alt="logo" style="width: 80px; height: 180px">
                         </div>
                         <div class="col">
-                    <img id="card3" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard3()" alt="logo" style="width: 100px; height: 200px; margin-right: 50px">
+                    <img id="card3" src="{% static 'myGrimoire/images/cards/card-back.svg' %}" onclick="flipCard3()" alt="logo" style="width: 80px; height: 180px;">
                         </div>
                     </div>
                 </div>

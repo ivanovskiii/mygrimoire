@@ -119,17 +119,17 @@
 
 {#    END TOP NAV BAR    #}
 
-<div id="main_content">
+<div id="main_content col-lg-5">
 <div class="container pt-4 col-lg-5">
     <div style="display: grid;overflow-x: auto;" id="ui-grn" div class="d-grid col-12 pt-1">
         <h3 class="pt-2 gap-2 text-center" style="height: 50px;"><i>{{ onecourse.title }}</i></h3>
         <div class="container pb-1 justify-content-center row">
-            <img style="width: 225px; height: 200px; border-radius: 25px" src="{{ MEDIA_URL }}{{ onecourse.image.url }}" class="card-img-top col-xs-6" alt="...">
+            <img style="width: 150px; height: 150px; border-radius: 30px" src="{{ MEDIA_URL }}{{ onecourse.image.url }}" class="card-img-top" alt="...">
             <p class="col-xs-6" style="font-family: 'IM FELL DW Pica'; color: #F3F3CD ;width: 200px; text-justify: newspaper">{{ onecourse.description }}</p>
         </div>
     </div>
 <br>
-    <div style="display: grid;overflow-x: auto;" id="ui-grn" div class="d-grid col-12 pt-1">
+    <div style="display: grid;" id="ui-grn" div class="d-grid col-12 pt-1">
         <h3 class="pt-2 text-center" style="height: 40px;">Course Rating</h3>
         <div style="margin-left: 15px; margin-top: -15px" class="container text-center pb-1">
             {% if onecourse.rating == 1 %}
@@ -151,7 +151,9 @@
 
 </div>
 </div>
-<br><br><br><br>
+<div class="container text-center pt-4">
+    <img src="{% static 'myGrimoire/images/stars_group_two.svg' %}" alt="logo" style="width: 50px; height: 50px">
+    </div>
 
 
 {#    BOTTOM NAV BAR    #}
