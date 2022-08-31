@@ -6,9 +6,6 @@
 
 {% block content %}
 
-    <style>
-
-    </style>
 
     <script>
 
@@ -38,7 +35,7 @@
     <div id="main_content">
     <div id="quote-text" class="container col-8 text-center">
 
-        <p style="font-family: 'IM FELL DW Pica'; color: #F3F3CD; font-size: 22px;"><i>“Feeling stressed? Take time to breathe out and try again.”</i></p>
+        <p style="font-family: 'IM Fell DW Pica', serif; color: #F3F3CD; font-size: 22px;"><i>“Feeling stressed? Take time to breathe out and try again.”</i></p>
     </div>
 
         <div class="container col-lg-5">
@@ -52,14 +49,14 @@
 
             <div style="display: grid;overflow-x: auto;" id="ui-grn" class="text-center gap-2 pt-2"><h3 class="pt-2 gap-2" style="height: 50px;">Featured Courses</h3>
 
-                    <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: 60%; overflow-x: auto;">
+                    <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: auto; overflow-x: auto;">
                         {% for course in courses %}
                             {% if course.featured == 1 %}
                                 <a style="text-decoration: none;" href="/mygrimoire/courses/{{ course.id }}/start">
-                        <div class="card" style="background-color: #F3F3CD; width: 12rem; margin-bottom: 10px; border-radius: 25px">
+                        <div class="card text-center" style="background-color: #F3F3CD; width: 12rem; margin-bottom: 30px; border-radius: 25px; margin-left:25px">
                             <img style="border-radius: 25px" src="{{ MEDIA_URL }}{{ course.image.url }}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h4 style="color: #091D12; font-family: 'IM FELL DW Pica'">{{ course.title}}</h4>
+                                    <h4 style="color: #091D12; font-family: 'IM Fell DW Pica', serif">{{ course.title}}</h4>
                                 </div>
                         </div>
                                 </a>
@@ -118,16 +115,16 @@
             <div class="row-cols-md-auto">
   <div class="row text-center">
     <div class="col">
-        <a style="text-decoration: none;" href="/mygrimoire/main"><img style="width: 30px" src="{% static 'myGrimoire/images/icons/home-fill.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Home</p></a>
+        <a style="text-decoration: none;" href="/mygrimoire/main"><img style="width: 30px" src="{% static 'myGrimoire/images/icons/home-fill.svg' %}" alt="logo"><p style="font-family: 'IM Fell DW Pica', serif; color:#F3F3CD">Home</p></a>
     </div>
     <div class="col">
-      <a style="text-decoration: none;" href="/mygrimoire/courses"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/cap.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Courses</p></a>
+      <a style="text-decoration: none;" href="/mygrimoire/courses"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/cap.svg' %}" alt="logo"><p style="font-family: 'IM Fell DW Pica', serif; color:#F3F3CD">Courses</p></a>
     </div>
     <div class="col">
-      <a style="text-decoration: none;" href="/mygrimoire/readings"><img style="width: 25px; margin-bottom: 2px;" src="{% static 'myGrimoire/images/icons/book.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">Readings</p></a>
+      <a style="text-decoration: none;" href="/mygrimoire/readings"><img style="width: 25px; margin-bottom: 2px;" src="{% static 'myGrimoire/images/icons/book.svg' %}" alt="logo"><p style="font-family: 'IM Fell DW Pica', serif; color:#F3F3CD">Readings</p></a>
     </div>
       <div class="col">
-      <a style="text-decoration: none;" href="/mygrimoire/you"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/person-crop-circle.svg' %}" alt="logo"><p style="font-family: 'IM FELL DW Pica'; color:#F3F3CD">You</p></a>
+      <a style="text-decoration: none;" href="/mygrimoire/you"><img style="width: 25px" src="{% static 'myGrimoire/images/icons/person-crop-circle.svg' %}" alt="logo"><p style="font-family: 'IM Fell DW Pica', serif; color:#F3F3CD">You</p></a>
     </div>
   </div>
 </div>
