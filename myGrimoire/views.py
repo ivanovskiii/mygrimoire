@@ -80,6 +80,13 @@ def coursestart(request, id_course):
     return render(request, "course_start_screen.html", context)
 
 
+def courseStartFromMain(request, id_course):
+    onecourse = Course.objects.get(id=id_course)
+
+    context = {'onecourse': onecourse}
+    return render(request, "course_start_screen_from_main.html", context)
+
+
 def readingsPage(request):
     return render(request, "readings.html")
 
@@ -99,6 +106,13 @@ def tarotCard(request, id_tarotCard):
 
     context = {'oneTarotCard': onecard}
     return render(request, "tarotCard.html", context)
+
+
+def tarotCardFromMain(request, id_tarotCard):
+    onecard = TarotCard.objects.get(id=id_tarotCard)
+
+    context = {'oneTarotCard': onecard}
+    return render(request, "tarotCard_from_main.html", context)
 
 
 def spreadsPage(request):

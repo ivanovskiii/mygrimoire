@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 # from myGrimoire.views import courses
 
 urlpatterns = [
+    path('', include("myGrimoire.urls")),
     path('admin/', admin.site.urls),
     path('mygrimoire/', include("myGrimoire.urls"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -41,7 +41,7 @@
         <div class="container col-lg-5">
 
             <div class="d-grid pt-4 gap-3">
-                <a id="ui-bar-grn" class="btn" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/main/my-grimoire" role="button">
+                <a id="ui-bar-grn" class="btn" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="mygrimoire/main/my-grimoire" role="button">
                     <img src="{% static 'myGrimoire/images/my_grimoire_text_button.svg' %}" alt="logo" style="width: 180px;">
                     <img src="{% static 'myGrimoire/images/grimoire_icon.svg' %}" alt="logo" style="width: 60px; height: 60px;">
                 </a>
@@ -52,11 +52,11 @@
                     <div class="container gap-3" style="display: grid; grid-auto-flow: column; grid-auto-columns: auto; overflow-x: auto;">
                         {% for course in courses %}
                             {% if course.featured == 1 %}
-                                <a style="text-decoration: none;" href="/mygrimoire/courses/{{ course.id }}/start">
+                                <a style="text-decoration: none;" href="courses/{{ course.id }}/start">
                         <div class="card text-center" style="background-color: #F3F3CD; width: 12rem; margin-bottom: 30px; border-radius: 25px; margin-left:25px">
                             <img style="border-radius: 25px" src="{{ MEDIA_URL }}{{ course.image.url }}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h4 style="color: #091D12; font-family: 'IM Fell DW Pica', serif">{{ course.title}}</h4>
+                                    <h4 style="color: #091D12; font-family: 'IM Fell DW Pica', serif">{{ course.title }}</h4>
                                 </div>
                         </div>
                                 </a>
@@ -71,7 +71,7 @@
 
                     {% for tarotCard in tarotCards %}
                         {% if tarotCard.cardOfTheDay == 1 %}
-                            <a id="ui-bar-prpl-active" class="btn btn-mg" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/readings/all-tarot-cards/{{ tarotCard.id }}" role="button">
+                            <a id="ui-bar-prpl-active" class="btn btn-mg" style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .10rem; font-size: 22px;" href="/mygrimoire/main/readings/all-tarot-cards/{{ tarotCard.id }}" role="button">
                                 Card of The Day: <i>{{ tarotCard.name }}</i></a>
                         {% endif %}
             {% endfor %}

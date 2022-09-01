@@ -6,7 +6,7 @@ from django.conf import settings
 app_name = "main"
 
 urlpatterns = [
-    path("home/", views.homepage, name="homepage"),
+    path("", views.homepage, name="homepage"),
     path('register/', views.register_request, name="register"),
     path("login/", views.login_request, name="login"),
     path("logout/", views.logout_request, name="logout"),
@@ -16,10 +16,12 @@ urlpatterns = [
     path("readings/", views.readingsPage, name="readings"),
     path("readings/all-tarot-cards", views.allCardsPage, name="allCards"),
     path("readings/all-tarot-cards/<str:id_tarotCard>", views.tarotCard),
+    path("main/readings/all-tarot-cards/<str:id_tarotCard>", views.tarotCardFromMain),
     path("readings/spreads", views.spreadsPage, name="spreads"),
     path("main/my-grimoire", views.myGrimoirePage, name="myGrimoirePage"),
     path("courses/<str:id_course>", views.course),
     path("courses/<str:id_course>/start", views.coursestart),
     path("courses/<str:id_course>/quiz", views.courseQuiz),
     path("courses/<str:id_course>/quiz/results", views.courseQuizResults),
+    path("main/courses/<str:id_course>/start", views.courseStartFromMain),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
